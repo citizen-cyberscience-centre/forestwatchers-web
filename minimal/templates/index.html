@@ -1,0 +1,85 @@
+{% extends 'layout/base.html' %}
+
+{% block content %}
+
+    <div class="row">
+      <div class="span8 offset2 columns">
+        <h1>Help the World's Forest</5>
+        <h6 class="hidden-phone">A citizen project for forest monitoring</h6>
+
+        <div id="myCarousel" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="item active">
+                <a href="http://www.flickr.com/photos/leoffreitas/789157023/">
+                  <img src="{{ url_for('assets.static', filename='img/forest.jpg')}}" alt="">
+                </a>
+                <div class="carousel-caption">
+                  <h4>Forests are in danger 
+                    <small class="pull-right hidden-phone">Photo by Leonardo F. Freitas (BY-NC-SA 2.0)</small>
+                  </h4>
+                </div>
+              </div>
+              <div class="item">
+                <a href="http://www.flickr.com/photos/leoffreitas/1469377935/">
+                  <img src="{{ url_for('assets.static', filename='img/burning.jpg')}}" alt="">
+                </a>
+                <div class="carousel-caption">
+                  <h4>Fires, illegal logging, ...
+                    <small class="pull-right hidden-phone">Photo by Leonardo F. Freitas (BY-NC-SA 2.0)</small>
+                  </h4>
+                </div>
+              </div>
+              <div class="item">
+                <a href="http://www.flickr.com/photos/mcgarry/111003432/">
+                  <img src="{{ url_for('assets.static', filename='img/crowd.jpg')}}" alt="">
+                </a>
+                <div class="carousel-caption">
+                  <h4>But a crowd can help!
+                    <small class="pull-right hidden-phone">Photo by Kevin McGarry (BY-NC-SA 2.0)</small>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+          </div>
+
+        <p style="text-align:center"><a href="learnmore.html" class="btn btn-primary btn-large"><i class="icon icon-white icon-star"></i> Learn more &raquo;</a>
+        <a href="/pybossa" class="btn btn-success btn-large"><i class="icon icon-white icon-globe"></i> Contribute &raquo;</a></p>
+      </div>
+</div>
+
+
+      <div class="row">
+        <div class="span12">
+          <hr>
+        </div>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span4">
+          <h2>The Problem</h2>
+           <p>Tropical forests provide habitat for most of the world’s known terrestrial plant and animal species. These ecosystems are under increasing threat worldwide. During the last decades, several millions of hectares of humid tropical forest were lost each year. Despite the proliferation of new remote sensing technologies, information about the status of world’s forest is limited and unevenly distributed.</p>
+
+           <p>The immense task of protecting for future generations and adequate share of world’s remaining forest is outside the reach of traditional conservation strategies alone. It calls for collective action to complement existing initiatives.
+</p>
+          <p><a class="btn" href="learnmore.html">View details &raquo;</a></p>
+        </div>
+        <div class="span4">
+          <h2>The Solution</h2>
+           <p>We propose a new paradigm in conservationism based on the convergence of volunteer computing with free (or donated) catalogues of high-resolution Earth imagery.</p>
+
+           <p>This citizen science project aims at making possible to anyone (locals, volunteers, NGOs, governments, etc), anywhere in the world, to monitor selected patches of forest across the globe, almost in real-time, using a notebook, a tablet or a smart phone connected to the Internet.  </p>
+          <p><a class="btn" href="learnmore.html">View details &raquo;</a></p>
+       </div>
+        <div class="span4">
+          <h2>Citizen Science</h2>
+          <p>Citizen science is a term used for projects in which individual volunteers or networks of volunteers, many of whom may have no specific scientific training, perform or manage research-related tasks such as observation, measurement or computation.</p>
+          <p><a class="btn" href="learnmore.html">View details &raquo;</a></p>
+        </div>
+      </div>
+
+{% include 'helpers/_carousel.js' %}
+
+{% endblock %}

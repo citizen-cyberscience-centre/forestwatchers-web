@@ -2,7 +2,43 @@
       <hr>
 
       <footer>
-      <p>&copy; {{ copyright }} {{ year }}</p>
+      <div class="row">
+        <div class="span12">
+          <p>&copy; {{ copyright }} {{ year }}</p>
+        </div>
+        <div class="row">
+          <div class="span2">
+            <a href="http://www.soros.org">
+            <img src="{{ url_for('assets.static', filename='img/logos/soros.png') }}">
+            </a>
+          </div>  
+          <div class="span2">
+            <a href="http://www.unitar.org/unosat">
+            <img src="{{ url_for('assets.static', filename='img/logos/unitar.png') }}">
+            </a>
+          </div>  
+          <div class="span2">
+            <a href="http://www.inpe.br">
+            <img src="{{ url_for('assets.static', filename='img/logos/inpe.png') }}">
+            </a>
+          </div>  
+          <div class="span2">
+            <a href="http://www.citizencyberscience.net">
+            <img src="{{ url_for('assets.static', filename='img/logos/ccc.png') }}">
+            </a>
+          </div>  
+          <div class="span2">
+            <a href="http://www.unifesp.br">
+            <img src="{{ url_for('assets.static', filename='img/logos/unifesp.png') }}">
+            </a>
+          </div>  
+          <div class="span2">
+            <a href="http://www.ufopa.edu.br">
+            <img src="{{ url_for('assets.static', filename='img/logos/ufopa.png') }}">
+            </a>
+          </div>  
+        </div>
+      </div>
       <p>Powered by <a href=http://github.com/teleyinex/minimal>Minimal</a></p>
       </footer>
 {% endblock %}
