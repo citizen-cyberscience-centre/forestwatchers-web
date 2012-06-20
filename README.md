@@ -1,3 +1,9 @@
+ForestWatchers WEB repository
+
+This repository hosts the web pages of http://forestwatchers.net 
+
+The server uses the web application Minimal
+
 Minimal is a small web application that allows you to create web pages
 really fast and easily with a beautiful interface thanks to [Bootstrap](http://twitter.github.com/bootstrap/.)
 
